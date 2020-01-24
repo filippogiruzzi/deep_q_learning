@@ -79,6 +79,9 @@ Woongwon, Youngmoo, Hyeokreal, Uiryeong, Keon,
 * _CS 285 (UC Berkeley) - Deep Reinforcement Learning_, 
 Sergey Levine,
 [ Course page ](http://rail.eecs.berkeley.edu/deeprlcourse/)
+* _Personal Reinforcement Learning notes_,
+Filippo Giruzzi,
+[ Github ](https://github.com/filippogiruzzi/reinforcement_learning_resources)
 * _Playing Atari with Deep Reinforcement Learning_, 
 Mnih et al., 2013,
 [ Arxiv ](https://arxiv.org/abs/1312.5602)
