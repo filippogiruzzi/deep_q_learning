@@ -6,7 +6,16 @@ Deep Q-learning, Deep Q Networks
 ## Table of contents
 
 1. [ Installation ](#1-installation)
-2. [ Introduction ](#2-introduction)
+2. [ Introduction ](#2-introduction)  
+    2.1 [ Goal ](#21-goal)  
+    2.2 [ Results ](#22-results)  
+3. [ Project structure ](#3-project-structure)
+4. [ Environments ](#4-environments)
+5. [ Project usage ](#5-project-usage)  
+    5.1 [ Train a DQN agent to play SpaceInvaders 
+    via Reinforcement Learning ](#51-train-a-dqn-agent-to-play-spaceinvaders-via-reinforcement-learning)
+6. [ Todo ](#6-todo)
+7. [ Resources ](#7-resources)
 
 ## 1. Installation
 
