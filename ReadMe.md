@@ -41,6 +41,10 @@ Deep Q-learning algorithms such as Deep Q Networks (DQN) or
 Double Deep Q Networks (DDQN) to play games (e.g Atari games) 
 with Reinforcement Learning.
 
+The global outline for a DQN algorithm is the following:
+
+![alt text](pics/dqn.png " DQN algorithm ")
+
 ### 2.2 Results
 
 ## 3. Project structure

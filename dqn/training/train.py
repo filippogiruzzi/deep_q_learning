@@ -36,6 +36,7 @@ def main():
     state_preprocessor = StatePreprocessor()
     q_value_estimator = QEstimator(scope="q_estimator", summaries_dir=experiment_dir)
     target_net_estimator = QEstimator(scope="target_q")
+    global_step = tf.Variable(0, name='global_step', trainable=False)
 
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
