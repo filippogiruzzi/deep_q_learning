@@ -92,7 +92,9 @@ $ python3 inference/test.py
 - [ ] Finish remodeling
 - [x] Full training on Google colab
 - [x] Add inference scripts
-- [ ] Add quantitative results & recordings to ReadMe
+- [x] Add recordings
+- [ ] Add quantitative results
+- [ ] Add DDQN model
 
 ## 7. Resources
 

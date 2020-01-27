@@ -31,7 +31,7 @@ def TrainDQNAgent(sess,
                   state_preprocessor,
                   num_episodes,
                   experiment_dir,
-                  replay_memory_size=500000,
+                  replay_memory_size=400000,
                   replay_memory_init_size=50000,
                   target_net_update=10000,
                   epsilon_start=1.0,
@@ -94,6 +94,7 @@ def TrainDQNAgent(sess,
         state = state_preprocessor.process(sess, state)
         state = np.stack([state] * 4, axis=2)
         loss = None
+        losses = []
 
         for t in itertools.count():
             # env.render()
@@ -130,6 +131,7 @@ def TrainDQNAgent(sess,
 
             states_batch = np.array(states_batch)
             loss = q_value_estimator.update(sess, states_batch, action_batch, targets_batch)
+            losses.append(loss)
 
             if done:
                 break
@@ -138,9 +140,10 @@ def TrainDQNAgent(sess,
             total_t += 1
 
         episode_summary = tf.Summary()
-        episode_summary.value.add(simple_value=epsilon, tag="episode/epsilon")
-        episode_summary.value.add(simple_value=stats.episode_rewards[i_episode], tag="episode/reward")
-        episode_summary.value.add(simple_value=stats.episode_lengths[i_episode], tag="episode/length")
+        episode_summary.value.add(simple_value=epsilon, tag='episode/epsilon')
+        episode_summary.value.add(simple_value=stats.episode_rewards[i_episode], tag='episode/reward')
+        episode_summary.value.add(simple_value=stats.episode_lengths[i_episode], tag='episode/length')
+        episode_summary.value.add(simple_value=np.mean(losses), tag='episode/loss')
         q_value_estimator.summary_writer.add_summary(episode_summary, i_episode)
         q_value_estimator.summary_writer.flush()
 
