@@ -75,8 +75,8 @@ $ python3 training/train.py
 ## 6. Todo
 
 - [ ] Finish remodeling
-- [ ] Full training on Google colab
-- [ ] Add inference scripts
+- [x] Full training on Google colab
+- [x] Add inference scripts
 - [ ] Add quantitative results & recordings to ReadMe
 
 ## 7. Resources
