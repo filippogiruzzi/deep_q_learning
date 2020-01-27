@@ -72,6 +72,12 @@ $ cd /path/to/project/deep_q_learning/dqn/
 $ python3 training/train.py
 ```
 
+### 5.2 Test the training DQN agent to play SpaceInvaders via Reinforcement Learning
+
+```
+$ python3 inference/test.py
+```
+
 ## 6. Todo
 
 - [ ] Finish remodeling
