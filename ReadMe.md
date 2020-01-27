@@ -13,7 +13,9 @@ Deep Q-learning, Deep Q Networks
 4. [ Environments ](#4-environments)
 5. [ Project usage ](#5-project-usage)  
     5.1 [ Train a DQN agent to play SpaceInvaders 
-    via Reinforcement Learning ](#51-train-a-dqn-agent-to-play-spaceinvaders-via-reinforcement-learning)
+    via Reinforcement Learning ](#51-train-a-dqn-agent-to-play-spaceinvaders-via-reinforcement-learning)  
+    5.2 [ Test the training DQN agent to play SpaceInvaders 
+    via Reinforcement Learning ](#52-test-the-training-dqn-agent-to-play-spaceinvaders-via-reinforcement-learning)
 6. [ Todo ](#6-todo)
 7. [ Resources ](#7-resources)
 
@@ -46,6 +48,13 @@ The global outline for a DQN algorithm is the following:
 ![alt text](pics/dqn.png " DQN algorithm ")
 
 ### 2.2 Results
+
+This section shows qualitative results for the initial random 
+DQN agent (on the left), and the DQN agent during training, after 
+approximately 5000 episodes (on the right).
+
+![Random DQN agent](pics/random_agent.gif)
+![Trained DQN agent](pics/trained_agent.gif)
 
 ## 3. Project structure
 
