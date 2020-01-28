@@ -13,7 +13,7 @@ def main():
     parser = argparse.ArgumentParser(description='Train DQN to play Space Invaders')
     parser.add_argument('--exp-dir', '-exp', type=str, default='', help='dir. to record experiments')
     parser.add_argument('--n-eps', '-n', type=int, default=10000, help='number of episodes')
-    parser.add_argument('--replay-size', '-rs', type=int, default=400000, help='replay memory size')
+    parser.add_argument('--replay-size', '-rs', type=int, default=250000, help='replay memory size')
     parser.add_argument('--replay-init-size', '-ris', type=int, default=50000, help='reaply memory initial size')
     parser.add_argument('--target-update', '-t', type=int, default=10000, help='target net update delay')
     parser.add_argument('--epsilon-range', '-e', type=str, default='1.0-0.1', help='epsilon initial & final values')
